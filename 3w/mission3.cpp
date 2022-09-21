@@ -4,11 +4,11 @@
 
 int main()
 {
-    char word[10] = "abcdedcba";
-    int length = 9;
+    char word[] = "abcdedcba";
+    int length = strlen(word);
     bool res = true;
 
-    for (int i = 0; i < strlen(word) / 2; i++) {
+    for (int i = 0; i < length / 2; i++) {
         if (word[i] != word[length - 1 - i]) {
             res = false;
             break;

@@ -6,7 +6,7 @@
 int calc_frequency(int octave, int inx);
 int main(void)
 {
-    int sheet[] = { 5, 5, 6, 6, 5, 5, 3, 5, 5, 3, 3, 2, 5, 5, 6, 6, 5, 5, 3, 5, 3, 2, 3, 1 };
+    int sheet[] = { 7, 7, 9, 9, 7, 7, 4, 7, 7, 4, 4, 2, 7, 7, 9, 9, 7, 7, 4, 7, 4, 2, 4, 0 };
     for (int i = 0; i < sizeof(sheet) / sizeof(int); ++i) {
         Beep(calc_frequency(4, int(sheet[i])), 500);
     }
